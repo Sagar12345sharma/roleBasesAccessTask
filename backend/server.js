@@ -34,6 +34,8 @@ mongoose
     Logger.error(err);
   });
 
-app.listen(5000, () => {
+let PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
   Logger.info("server is running http://localhost:5000");
 });
